@@ -1,8 +1,7 @@
 {
-  "name": "babel-plugin-transform-es2015-modules-simple-amd",
+  "name": "babel-plugin-transform-es2015-modules-bento-amd",
   "version": "0.3.0",
-  "description": "Simplified imports and exports",
-  "repository": "finom/babel-plugin-transform-es2015-modules-simple-amd",
+  "description": "Bento-compatible ES6 imports and exports",
   "license": "MIT",
   "main": "dist/index.js",
   "dependencies": {
