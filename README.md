@@ -1,6 +1,7 @@
-# babel-plugin-transform-es2015-modules-simple-amd [![npm version](https://badge.fury.io/js/babel-plugin-transform-es2015-modules-simple-amd.svg)](https://badge.fury.io/js/babel-plugin-transform-es2015-modules-simple-amd) 
+# babel-plugin-transform-es2015-modules-bento-amd
 
-Limited transformer for ECMAScript 2015 modules (AMD)
+Limited transformer for ECMAScript 2015 modules (AMD).
+Modified to work with the [Bento](https://github.com/LuckyKat/Bento) game engine.
 
 Converts this code:
 ```js
@@ -12,7 +13,7 @@ export default x + y;
 
 Into this one:
 ```js
-define(['/path/to/x', '/path/to/y'], function (x, y) {
+bento.define('path/to/mymodule', ['/path/to/x', '/path/to/y'], function (x, y) {
   doSomething();
   return x + y;
 });
@@ -51,6 +52,8 @@ Other features aren't supported.
 **Warning**. If no ``import`` or ``export`` are presented in JavaScript file, the plugin does nothing (means it doesn't wrap code with ``define``).
 
 ## Installation
+
+TODO: update this stuff?
 
 ```sh
 $ npm install --save-dev babel-plugin-transform-es2015-modules-simple-amd
